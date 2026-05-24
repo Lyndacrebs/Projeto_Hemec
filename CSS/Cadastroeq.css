@@ -1,0 +1,383 @@
+.body {
+    background-color: #DDE6EF;
+}
+.areazona {
+    width: 329px;
+    height: 880px;
+     box-sizing: border-box;
+  border: 1px solid black;
+  background-color: #0F1B65;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.areazona h5{
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+.palavras {
+    position: absolute;
+    top: 180px;
+    left: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.palavras2 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.palavras a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inder', sans-serif;
+}
+.palavras3 {
+    position: absolute;
+    top: 380px;
+    left: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.palavras4 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.palavras3 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inder', sans-serif;
+}
+.palavras5 h5 {
+    color: white;
+    position: absolute;
+    top: 320px;
+    left: 20px;
+}
+.palavras6 h5{
+    position: absolute;
+    color: white;
+    top: 795px;
+    left: 80px;
+    font-family: 'Inder', sans-serif;
+}
+.palavras6 img {
+    position: absolute;
+    top: 800px;
+    left: 20px;
+}
+.palavras7 img {
+    position: absolute;
+    top: 815px;
+    left: 280px;
+}
+.frase {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    color: black;
+}
+.area1 {
+    width: 174px;
+    height: 60px;
+     box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2155FC;
+}
+.area1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inder', sans-serif;
+}
+.linha {
+     flex: 1;
+  height: 2px;
+  background: black;
+  border: none;
+  width: 1030px;
+  position: absolute;
+  top: 80px;
+  left: 328px;
+}
+.frase2 {
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    color: black;
+}
+.input-box {
+position: relative;
+margin-bottom: 15px;
+width: 485px;
+top: 150px;
+left: 350px;
+margin-bottom: 30px;
+}
+
+.input-box input {
+width: 50%;
+padding: 20px 20px 20px 50px;
+border-radius: 8px;
+border: 2px solid black;
+}
+.input-box2 {
+position: relative;
+margin-bottom: 15px;
+width: 485px;
+top: -118px;
+left: 700px;
+margin-bottom: 30px;
+}
+
+.input-box2 input {
+width: 50%;
+padding: 20px 20px 20px 50px;
+border-radius: 8px;
+border: 2px solid black;
+}
+.input-box3 {
+position: relative;
+margin-bottom: 15px;
+width: 485px;
+top: -387px;
+left: 1050px;
+margin-bottom: 30px;
+}
+
+.input-box3 input {
+width: 45%;
+padding: 20px 20px 20px 50px;
+border-radius: 8px;
+border: 2px solid black;
+}
+.input-box4 {
+position: relative;
+margin-bottom: 15px;
+width: 485px;
+top: -387px;
+left: 1050px;
+margin-bottom: 30px;
+}
+
+.input-box4 input {
+width: 45%;
+padding: 65px 65px 65px 5px;
+border-radius: 8px;
+border: 2px solid black;
+}
+.container {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 20px;
+}
+/* Esconde o radio */
+input[type="radio"] {
+  display: none;
+}
+
+/* Card padrão */
+.card {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;   /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  gap: 10px; /* pequeno, só pra separar */
+  
+  width: 250px;
+  height: 40px;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transform: translate(140px, -350px); /* direita, cima */
+}
+
+/* Hover */
+.card:hover {
+  border-color: #007bff;
+}
+
+/* Quando selecionado */
+input[type="radio"]:checked + .card {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+.card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-direction: column;
+  align-items: center;
+}
+.frase5 {
+    position: absolute;
+    top: 410px;
+    left: 370px;
+}
+.container2 {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 20px;
+}
+/* Esconde o radio */
+input[type="radio"] {
+  display: none;
+}
+
+/* Card padrão */
+.card2 {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;   /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  gap: 10px; /* pequeno, só pra separar */
+  
+  width: 350px;
+  height: 20px;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transform: translate(90px, -300px); /* direita, cima */
+}
+
+/* Hover */
+.card2:hover {
+  border-color: #007bff;
+}
+
+/* Quando selecionado */
+input[type="radio"]:checked + .card {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+.card2 {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-direction: column;
+  align-items: center;
+}
+.container3 {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 20px;
+}
+/* Esconde o radio */
+input[type="radio"] {
+  display: none;
+}
+
+/* Card padrão */
+.card3 {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;   /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  gap: 10px; /* pequeno, só pra separar */
+  
+  width: 350px;
+  height: 20px;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transform: translate(90px, -280px); /* direita, cima */
+}
+
+/* Hover */
+.card3:hover {
+  border-color: #007bff;
+}
+
+/* Quando selecionado */
+input[type="radio"]:checked + .card {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+.card3 {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-direction: column;
+  align-items: center;
+}
+.frase6 {
+    position: absolute;
+    top: 550px;
+    left: 370px;
+}
+.area3 {
+    width: 200px;
+    height: 76px;
+     box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: absolute;
+  top: 780px;
+  right: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.area3 a{
+    color: black;
+    font-family: 'Inder', sans-serif;
+}
+.area2 {
+     width: 200px;
+    height: 76px;
+     box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: absolute;
+  top: 780px;
+  right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F1B65;
+}
+.area2 a {
+    color: white;
+    font-family: 'Inder', sans-serif;
+    text-decoration: none;
+}
