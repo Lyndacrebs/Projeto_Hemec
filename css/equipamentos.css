@@ -227,7 +227,7 @@ img {
     padding: 12px 16px;
     margin: 24px 0;
     width: 100%;
-    max-width: 97.3%;
+    max-width: 97.2%;
 }
 
 .icone-busca {
@@ -257,3 +257,185 @@ img {
 
 
 
+
+
+
+
+
+
+/* =========================================
+   5. TABELA EQUIPAMENTOS
+   ========================================= */
+
+
+/* Container com Scroll */
+.lista-equipamentos {
+    background-color: #ffffff;
+    border: 1px solid #DDE6EF;
+    border-radius: 12px;
+    padding: 24px;
+
+    /* Configuração do Scroll */
+    max-height: 500px; /* Altura fixa para ativar o scroll */
+    overflow-y: auto;  /* Scroll vertical automático */
+}
+
+/* Estilização da barra de rolagem (opcional, para ficar bonito no Chrome/Edge) */
+.lista-equipamentos::-webkit-scrollbar {
+    width: 8px;
+}
+.lista-equipamentos::-webkit-scrollbar-thumb {
+    background-color: #CBD5E1;
+    border-radius: 4px;
+}
+
+/* Configuração base da Tabela */
+.tabela-equipamentos {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços duplos nas bordas */
+    min-width: 800px; /* Garante que a tabela não fique espremida em telas pequenas */
+}
+
+/* Cabeçalho */
+.tabela-equipamentos th {
+    text-align: left;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.56);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+/* Corpo e Células */
+.tabela-equipamentos td {
+    padding: 16px 0;
+    font-size: 11px;
+    color: #000;
+    border-bottom: 1px solid #F1F5F9;
+    vertical-align: middle;
+}
+
+/* Remover borda da última linha */
+.tabela-equipamentos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilos de Texto Específicos */
+.coluna-PATRIM {
+    font-family: "Montserrat-Medium";
+    color: #2563EB; /* Azul */
+}
+
+.coluna-EQ {
+    font-family: "Montserrat-Medium";
+    color: #0F1B65; /* Azul escuro */
+}
+
+.badge-criticidade {
+   padding: 3px 12px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.badge-criticidade.vermelho {
+    background-color: #EF4444;
+}
+
+.badge-criticidade.amarelo {
+    background-color: #F59E0B;
+}
+
+.badge-criticidade.azul {
+    background-color: #2155FC;
+}
+
+
+/* 5. Badge de Status (Pill com bolinha) */
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* Espaço entre a bolinha e o texto */
+    padding: 4px 12px;
+    border-radius: 16px; /* Formato de pílula */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Pseudo-elemento para criar a bolinha colorida */
+.badge-status::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor; /* Herda a cor do texto */
+}
+
+/* Cores dos Status */
+.badge-status.vermelho {
+    background-color: #FEE2E2; /* Fundo rosa claro */
+    color: #EF4444; /* Texto e bolinha vermelhos */
+}
+
+.badge-status.amarelo {
+    background-color: #FEF3C7; /* Fundo amarelo claro */
+    color: #F59E0B; /* Texto e bolinha amarelos */
+}
+
+.badge-status.verde {
+    background-color: #D4F8F1; /* Fundo amarelo claro */
+    color: #00D4AA; /* Texto e bolinha amarelos */
+}
+
+
+/* Coluna de Ações (Layout Complexo) */
+.acoes-manutencao {
+    display: flex;
+    align-items: center;
+    gap: 55px; /* Espaço entre os botões azuis e o "Detalhes" */
+}
+
+/* Container para empilhar os botões azuis */
+.btns-acao {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espaço entre "Fazer Preventiva" e "Abrir Chamado" */
+}
+
+/* Botões Azuis (Ação Primária) */
+.btn-preventiva, 
+.btn-chamado {
+    background-color: #2563EB;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    white-space: nowrap; /* Impede que o texto quebre a linha */
+    transition: background-color 0.2s;
+}
+
+.btn-preventiva:hover, 
+.btn-chamado:hover {
+    background-color: #1D4ED8;
+}
+
+/* Botão Detalhes (Ação Secundária) */
+.btn-detalhes {
+    background-color: #F3F9FC;
+    text-decoration: none;
+    color: #0F1B65;
+    border: 1px solid #DDE6EF;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.btn-detalhes:hover {
+    background-color: #E2E8F0;
+    color: #0F1B65;
+}
