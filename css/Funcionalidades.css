@@ -43,29 +43,63 @@ a {
   display: block;
   margin-left: auto; /* joga pra direita */
   margin-right: 5px; /* espaço da borda direita */
-  width: 715px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 h1 {
   font-size: 50px;
   display: flex;
-  margin-top: -500px;
-  gap: 36px;
+  margin-top: -75%;
+  margin-left: 10%;
   font-family: "Inder", sans-serif;
 }
 .oie {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-left: 10px;
+  gap: 58px;
+  margin-left: 2%;
+  margin-top: -2%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .item h4 {
   color: #3754ed;
   font-family: "Inder", sans-serif;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .item p {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  line-height: 200%;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 60%;
+  margin-top: 0%;
+  font-weight: 900;
+  line-height: 150%;
+}
+.area2 {
+     width: 200px;
+    height: 76px;
+     box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: absolute;
+  top: 95%;
+  left: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3754ED;
+}
+.area2 a {
+    color: white;
+    font-family: 'Inder', sans-serif;
+    font-weight: 900;
 }
