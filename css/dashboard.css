@@ -31,7 +31,6 @@
 
 body {
     font-family: "Montserrat-Regular", sans-serif;
-    background-color: #F3F9FC;
 }
 
 
@@ -50,7 +49,12 @@ body {
 
      /* ADICIONE ISSO AQUI: */
     box-sizing: border-box; 
-    overflow: hidden; /* Garante que nada transborde e crie scroll */
+
+    /* ADICIONE ISSO: */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -167,3 +171,120 @@ img {
 
 }
 }
+
+
+/* =========================================
+   2. CONFIGURAÇÃO CONTEÚDO PRINCIPAL
+   ========================================= */
+
+.conteudo-principal {
+    margin-left: 18%; /* Empurra tudo para o lado uma só vez */
+    padding: 24px;    /* Espaço interno geral */
+    background-color: #F3F9FC;
+    min-height: 100vh; /* Garante que o fundo vá até o fim */
+}
+
+
+/* =========================================
+   3. MENU SUPERIOR
+   ========================================= */
+
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    span{
+        font-family: "Inter";
+        font-size: 20px;
+        color: #0F1B65;
+    }
+
+    .bt-novo-equipamento{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Montserrat-Medium";
+        font-size: 13px;
+        padding: 10px;
+        background-color: #2155FC;
+        border-radius: 6px;
+    }
+}
+
+
+/* =========================================
+   4. INDICADORES DOS EQUIPAMENTOS
+   ========================================= */
+
+.indicadores-equipamentos {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Estilo base para todos os cards */
+.total-equipamentos,
+.criticos,
+.em-reparo,
+.conformidade {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    /* Borda interna cinza */
+    border: 1px solid #DDE6EF;
+    
+    /* Borda superior colorida (sobrescreve a cinza no topo) */
+    position: relative;
+}
+
+
+.total-equipamentos {
+    border-top: 4px solid #00D4AA;
+}
+
+
+.criticos {
+    border-top: 4px solid #D62E28;
+
+span:last-child{
+    color: #EF4444;
+    font-size: 12px;
+}
+}
+
+
+.em-reparo {
+    border-top: 4px solid #F59E0B;
+
+span:last-child{
+    color: #F59E0B;
+    font-size: 12px;
+    }
+}
+
+
+.conformidade {
+    border-top: 4px solid #2155FC;
+}
+
+/* Título do indicador */
+.titulo-indicador {
+    font-size: 11px;
+    color: #0F1B65;
+}
+
+/* Valor principal */
+.valor-indicador {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: #0F1B65;
+}
+
+
+
