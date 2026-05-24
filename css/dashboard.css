@@ -569,3 +569,133 @@ span {
 .barra-preenchimento.vermelho {
     background-color: #EF4444;
 }
+
+
+
+
+
+/* =========================================
+   6. ORDENS DE SERVIÇO
+   ========================================= */
+
+.ordens-servico {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #DDE6EF;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+
+.topo-conteiner-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.tabela-ordens {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+/* Cabeçalho da Tabela */
+.tabela-ordens th {
+    text-align: left;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.56);
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+/* Linhas e Células */
+.tabela-ordens td {
+    padding: 16px 0; /* Espaçamento vertical */
+    font-size: 11px;
+    color: #0F1B65;
+    border-bottom: 1px solid #F1F5F9; /* Linha separadora */
+    vertical-align: middle;
+}
+
+/* Remover a borda da última linha */
+.tabela-ordens tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.coluna-os {
+    font-family: "Montserrat-Medium";
+    color: #2563EB;
+}
+
+.coluna-EQ{
+    font-family: "Montserrat-Medium";
+    color: #000;
+}
+
+/* 4. Badge de Criticidade (A, B, C) */
+.badge-criticidade {
+   padding: 3px 12px;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.badge-criticidade.vermelho {
+    background-color: #EF4444;
+}
+
+.badge-criticidade.amarelo {
+    background-color: #F59E0B;
+}
+
+
+/* 5. Badge de Status (Pill com bolinha) */
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px; /* Espaço entre a bolinha e o texto */
+    padding: 4px 12px;
+    border-radius: 16px; /* Formato de pílula */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Pseudo-elemento para criar a bolinha colorida */
+.badge-status::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor; /* Herda a cor do texto */
+}
+
+/* Cores dos Status */
+.badge-status.vermelho {
+    background-color: #FEE2E2; /* Fundo rosa claro */
+    color: #EF4444; /* Texto e bolinha vermelhos */
+}
+
+.badge-status.amarelo {
+    background-color: #FEF3C7; /* Fundo amarelo claro */
+    color: #F59E0B; /* Texto e bolinha amarelos */
+}
+
+/* 6. Botão "Executar" */
+.btn-executar {
+    background-color: #F3F9FC;
+    text-decoration: none;
+    color: #0F1B65;
+    border: 1px solid #DDE6EF;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.btn-executar:hover {
+    background-color: #E2E8F0;
+    color: #0F1B65;
+}
