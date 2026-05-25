@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hemec | Abrir chamado</title>
-    <link rel="stylesheet" href="/css/abertura-chamado.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/abertura-chamado.css" />
+  </head>
+  <body>
     <!-- MENU -->
 
     <aside class="sidebar">
       <!-- Logo -->
       <img src="/images-DEV-EV/logo.png" class="logo" alt="logo" />
-      <hr>
+      <hr />
 
       <!-- Menu Principal -->
       <nav class="menu-section">
@@ -33,13 +33,16 @@
       <nav class="menu-section" class="nav-manutencao">
         <span>MANUTENÇÃO</span>
 
-        <a href="#" class="nav-ordens-servico">
+        <a href="/pages/ordens-servico.html" class="nav-ordens-servico">
           <img src="/images-DEV-EV/icone-3.png" alt="ICONE ORDENS DE SERVIÇO" />
           <span>Ordens de Serviço</span>
         </a>
 
         <a href="/pages/manutencao-preventiva.html" class="nav-manut-prev">
-          <img src="/images-DEV-EV/icone-4.png" alt="ICONE MANUTENÇÃO PREVENTIVA" />
+          <img
+            src="/images-DEV-EV/icone-4.png"
+            alt="ICONE MANUTENÇÃO PREVENTIVA"
+          />
           <span>Manutenção Preventiva</span>
         </a>
       </nav>
@@ -49,7 +52,7 @@
         <a href="/pages/perfil.html" class="nav-perfil">
           <div class="avatar">
             <img src="/images-DEV-EV/icone-5.png" alt="Avatar" />
-               <!-- ESPERANDO BACKEND -->
+            <!-- ESPERANDO BACKEND -->
             <span class="nome-paciente">Rafaela Lima</span>
           </div>
         </a>
@@ -59,69 +62,102 @@
       </div>
     </aside>
 
-
-     <!-- CONTEÚDO PRINCIPAL -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <div class="conteudo-principal">
-    <!--TOPO DA PÁGINA-->
-        <div class="main-top">
-            <span>Abertura de Chamado</span>
-            <a href="/pages/Cadastro_equipamentos.html" class="bt-novo-equipamento">Novo Equipamento</a>
+      <!--TOPO DA PÁGINA-->
+      <div class="main-top">
+        <span>Abertura de Chamado</span>
+        <a href="/pages/Cadastro_equipamentos.html" class="bt-novo-equipamento"
+          >Novo Equipamento</a
+        >
+      </div>
+
+      <!-- CONTEINER DA ABERTURA -->
+      <!-- ESPERANDO BACKEND -->
+      <form
+        class="conteiner-abertura"
+        action="/api/abrir-chamado"
+        method="POST"
+      >
+        <!-- Badge da OS -->
+        <span class="os-badge">#OS-2025-089</span>
+
+        <!-- Linha 1: Equipamento e Setor -->
+        <div class="form-row">
+          <div class="form-group">
+            <label>EQUIPAMENTO</label>
+
+            <!-- ESPERANDO BACKEND -->
+            <select
+              class="select-custom"
+              id="equipamento"
+              name="equipamento"
+              required
+            >
+              <option>Ventilador Mecânico VX-3000</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>SETOR</label>
+
+            <!-- ESPERANDO BACKEND -->
+            <select class="select-custom" id="setor" name="setor" required>
+              <option>UTI Adulto</option>
+            </select>
+          </div>
         </div>
 
-
-
-         <!-- CONTEINER DA ABERTURA -->
-        <div class="conteiner-abertura">
-    
-            <!-- Badge da OS -->
-            <span class="os-badge">#OS-2025-089</span>
-
-    <!-- Linha 1: Equipamento e Setor -->
-            <div class="form-row">
-                <div class="form-group">
-                    <label>EQUIPAMENTO</label>
-
-                    <!-- ESPERANDO BACKEND -->
-                    <select class="select-custom">
-                        <option>Ventilador Mecânico VX-3000</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>SETOR</label>
-
-                    <!-- ESPERANDO BACKEND -->
-                    <select class="select-custom">
-                        <option>UTI Adulto"</option>
-                    </select>
-                </div>
-            </div>
-
-             <!-- Linha 2: Criticidade -->
-            <div class="form-group">
-                <label>CRITICIDADE DO CHAMADO</label>
-                <div class="criticidade-options">
+        <!-- Linha 2: Criticidade -->
+        <div class="form-group">
+          <label>CRITICIDADE DO CHAMADO</label>
+          <div class="criticidade-options">
             <!-- ESPERANDO BACKEND -->
-                    <button class="criticidade-option selected-a">A</button>
-            
-            <!-- ESPERANDO BACKEND -->
-                    <button class="criticidade-option option-b">B</button>
-            
-            <!-- ESPERANDO BACKEND -->
-                    <button class="criticidade-option option-c">C</button>
-                </div>
-            </div>
+            <button
+              type="button"
+              class="criticidade-option option-a"
+              data-valor="A"
+            >
+              A
+            </button>
 
+            <!-- ESPERANDO BACKEND -->
+            <button
+              type="button"
+              class="criticidade-option option-b"
+              data-valor="B"
+            >
+              B
+            </button>
 
-            <!-- Linha 3: Descrição -->
-            <div class="form-group">
-                <label>DESCRIÇÃO DO PROBLEMA</label>
-                <textarea class="textarea-problema" placeholder="Descreva o problema"></textarea>
-            </div>
+            <!-- ESPERANDO BACKEND -->
+            <button
+              type="button"
+              class="criticidade-option option-c"
+              data-valor="C"
+            >
+              C
+            </button>
+          </div>
         </div>
 
+        <!-- Linha 3: Descrição -->
+        <div class="form-group">
+          <label>DESCRIÇÃO DO PROBLEMA</label>
+          <textarea
+            class="textarea-problema"
+            id="descricao"
+            name="descricao"
+            placeholder="Descreva o problema"
+          ></textarea>
+        </div>
 
-
+        <div class="form-actions">
+          <button type="submit" class="btn-registrar">
+            <span>Registrar Chamado</span>
+          </button>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
