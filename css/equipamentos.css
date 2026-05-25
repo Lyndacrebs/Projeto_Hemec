@@ -208,6 +208,12 @@ img {
         padding: 10px;
         background-color: #2155FC;
         border-radius: 6px;
+
+    &:hover{
+    background-color: #1E48E0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(33, 85, 252, 0.3);
+    }
     }
 }
 

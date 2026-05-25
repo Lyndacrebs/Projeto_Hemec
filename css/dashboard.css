@@ -209,6 +209,12 @@ img {
         padding: 10px;
         background-color: #2155FC;
         border-radius: 6px;
+
+    &:hover{
+    background-color: #1E48E0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(33, 85, 252, 0.3);
+    }
     }
 }
 
@@ -273,13 +279,13 @@ span:last-child{
     border-top: 4px solid #2155FC;
 }
 
-/* Título do indicador */
+
 .titulo-indicador {
     font-size: 10px;
     color: #0F1B65;
 }
 
-/* Valor principal */
+
 .valor-indicador {
     font-family: "Inter", sans-serif;
     font-size: 30px;
@@ -613,10 +619,10 @@ span {
 
 /* Linhas e Células */
 .tabela-ordens td {
-    padding: 16px 0; /* Espaçamento vertical */
+    padding: 16px 0; 
     font-size: 11px;
     color: #0F1B65;
-    border-bottom: 1px solid #F1F5F9; /* Linha separadora */
+    border-bottom: 1px solid #F1F5F9; 
     vertical-align: middle;
 }
 
@@ -635,7 +641,7 @@ span {
     color: #000;
 }
 
-/* 4. Badge de Criticidade (A, B, C) */
+/* Badge de Criticidade (A, B, C) */
 .badge-criticidade {
    padding: 3px 12px;
     border-radius: 4px;
@@ -653,13 +659,13 @@ span {
 }
 
 
-/* 5. Badge de Status (Pill com bolinha) */
+
 .badge-status {
     display: inline-flex;
     align-items: center;
-    gap: 6px; /* Espaço entre a bolinha e o texto */
+    gap: 6px; 
     padding: 4px 12px;
-    border-radius: 16px; /* Formato de pílula */
+    border-radius: 16px; 
     font-size: 12px;
     font-weight: 500;
 }
@@ -673,18 +679,18 @@ span {
     background-color: currentColor; /* Herda a cor do texto */
 }
 
-/* Cores dos Status */
+
 .badge-status.vermelho {
-    background-color: #FEE2E2; /* Fundo rosa claro */
-    color: #EF4444; /* Texto e bolinha vermelhos */
+    background-color: #FEE2E2; 
+    color: #D62E28;
 }
 
 .badge-status.amarelo {
-    background-color: #FEF3C7; /* Fundo amarelo claro */
-    color: #F59E0B; /* Texto e bolinha amarelos */
+    background-color: #FEF3C7; 
+    color: #F59E0B; 
 }
 
-/* 6. Botão "Executar" */
+
 .btn-executar {
     background-color: #F3F9FC;
     text-decoration: none;
