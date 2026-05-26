@@ -1,0 +1,553 @@
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS E FONTES
+   ========================================= */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter_18pt-Bold.ttf");
+}   
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    font-family: "Montserrat-Regular", sans-serif;
+}
+
+
+/* =========================================
+   2. MENU LATERAL
+   ========================================= */
+
+.sidebar {
+    background-color: #0F1B65;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+    height: 100vh;
+    width: 18%;
+    justify-content: space-between;
+
+     /* ADICIONE ISSO AQUI: */
+    box-sizing: border-box; 
+
+    /* ADICIONE ISSO: */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 130px;
+    height: 54px;
+    margin-bottom: 8px;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.301);
+    margin: 24px 0;
+}
+
+/* Seções do Menu */
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 60px;
+}
+
+.menu-section > span {
+    color: #B5B5B5;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+}
+
+/* Links de Navegação */
+.menu-section a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    transition: all 0.3s ease;
+
+&:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+}
+
+}
+
+
+/* Item Ativo*/
+.nav-ordens-servico{
+    background-color: #1734A8 !important;
+    color: #ffffff !important;
+}
+
+
+
+/* Footer do Usuário */
+.sidebar-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.301);
+    margin-top: auto;
+
+
+.nav-perfil {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex: 1;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.nome-paciente {
+    color: #ffffff;
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.bt-navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: none;
+    border: none;
+
+    img {
+    width: 25px;
+    height: 25px;
+}
+
+}
+}
+
+
+
+
+
+
+
+/* =========================================
+   2. CONFIGURAÇÃO CONTEÚDO PRINCIPAL
+   ========================================= */
+
+.conteudo-principal {
+    margin-left: 18%; /* Empurra tudo para o lado uma só vez */
+    padding: 24px;    /* Espaço interno geral */
+    background-color: #F3F9FC;
+    min-height: 100vh; /* Garante que o fundo vá até o fim */
+}
+
+
+
+
+
+
+/* =========================================
+   3. MENU SUPERIOR
+   ========================================= */
+
+.main-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    span{
+        font-family: "Inter";
+        font-size: 20px;
+        color: #0F1B65;
+    }
+
+    .bt-novo-equipamento{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Montserrat-Medium";
+        font-size: 13px;
+        padding: 10px;
+        background-color: #2155FC;
+        border-radius: 6px;
+
+    &:hover{
+    background-color: #1E48E0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(33, 85, 252, 0.3);
+    }
+    }
+}
+
+
+
+/* =========================================
+   4. CABEÇALHO DO EQUIPAMENTO
+   ========================================= */
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #ffffff;
+    border: 1px solid #DDE6EF;
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.topo-cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.img-conteiner {
+    width: 72px;
+    height: 61px;
+    background-color: #D3DDFE; /* Azul claro */
+    border-radius: 5px;
+    border: 1px solid #2155FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+img {
+    width: 20px;
+}  
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+span:first-child {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-size: 20px;
+    color: #0F1B65;
+    font-weight: 600;
+}
+
+span:last-child {
+    font-size: 12px;
+    color: #0F1B65;
+}
+}
+
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+span{
+    display: block;
+    font-size: 10px;
+    color: #0F1B65;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+}
+
+
+.descricao-problema {
+    width: 96%;
+    min-height: 120px;
+    padding: 16px;
+    background-color: #F3F9FC;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+p{
+ font-size: 11px;
+ color: #0F1B65;
+}
+}
+
+
+
+
+/* =========================================
+   5. LINHA SEÇÃO INFORMAÇÕES
+   ========================================= */
+
+.secao-informacoes {
+    margin-top: 30px;
+    /* A linha cinza que atravessa tudo */
+    border-bottom: 1px solid #E2E8F0; 
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.titulo-secao {
+    font-size: 14px;
+    color: #2155FC;
+    
+    /* O sublinhado azul do texto */
+    border-bottom: 2px solid #2155FC; 
+    
+    display: inline-block;
+    padding-bottom: 10px;
+    
+    /* Truque para o texto ficar "em cima" da linha cinza */
+    margin-bottom: -1px; 
+}
+
+/* Esconde o <hr> original já que usamos o border-bottom do container */
+.linha-secao {
+    display: none; 
+}
+
+
+
+
+
+/* =========================================
+   6. INPUTS DE INFORMAÇÃO 
+   ========================================= */
+
+.conteiner-input {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-config {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+
+label {
+    font-size: 10px;
+    color: #0F1B65;
+    letter-spacing: 0.5px;
+}
+}
+
+.input-config input {
+    padding: 14px 16px;
+    background-color: #ffffff;
+    border: 1px solid #DDE6EF;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #0F1B65;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-config input:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input-config input::placeholder {
+    color: #94A3B8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteiner-input {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+
+
+
+
+/* =========================================
+   7. CHECKLIST
+   ========================================= */
+
+
+ /* Container com Scroll */
+.conteiner-checklist {
+    background-color: #ffffff;
+    border: 1px solid #DDE6EF;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Estilização da barra de rolagem */
+.conteiner-checklist::-webkit-scrollbar {
+    width: 8px;
+}
+.conteiner-checklist::-webkit-scrollbar-thumb {
+    background-color: #CBD5E1;
+    border-radius: 4px;
+}
+
+.topo-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.nome-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+img {
+    width: 16px;
+    height: 16px;
+}
+
+span {
+    font-family: "Montserrat-Medium", sans-serif;
+    font-size: 14px;
+    color: #0F1B65;
+    font-weight: 500;
+}
+}
+
+.bt-confirmar {
+    padding: 3px 10px;
+    border: 1px solid #94A3B8;
+    border-radius: 4px;
+    color: #475569;
+    background-color: #ffffff; 
+    font-size: 12px;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.bt-confirmar:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+    background-color: #EFF6FF;
+}
+
+
+/* Lista do Checklist */
+.lista-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Item do Checklist */
+.item-checklist {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background-color: #F3F9FC;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+&:hover {
+    background-color: #F1F5F9;
+}
+}
+
+/* Checkbox personalizado */
+.item-checklist input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #CBD5E1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+/* Checkbox marcado */
+.item-checklist input[type="checkbox"]:checked {
+    background-color: #00D4AA;
+    border-color: #00D4AA;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Checkmark (✓) personalizado */
+.item-checklist input[type="checkbox"]:checked::after {
+    content: ''; /* Necessário para o pseudo-elemento aparecer */
+    background-image: url(/images-DEV-EV/icone-18.png);
+     background-size: contain; /* Ajusta a imagem ao tamanho do elemento */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14px; 
+    height: 14px;
+}
+
+
+/* Texto do item */
+.item-checklist span {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+/* Item marcado (texto mais escuro) */
+.item-checklist:has(input:checked) span {
+    color: #0F1B65;
+    font-weight: 500;
+}

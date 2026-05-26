@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemec | Manutenção Corretiva Chacklist</title>
+    <link rel="stylesheet" href="/css/manutencao-corretiva.css">
 </head>
 <body>
         <!-- MENU -->
@@ -70,6 +71,8 @@
 
         <!-- CABEÇALHO EQUIPAMENTO -->
       <div class="cabecalho">
+
+        <div class="topo-cabecalho">
         <div class="img-conteiner">
           <img src="/images-DEV-EV/icone-15.png" alt="" />
         </div>
@@ -79,18 +82,15 @@
           <span>Monitor Multiparamétrico</span>
           <span>Philips</span>
         </div>
-
+        </div>
 
         <!-- ESPERANDO BACKEND -->
         <!-- Descrição do problema cadastrado na abertura do chamado-->
         <div class="form-group">
-          <label>DESCRIÇÃO DO PROBLEMA</label>
-          <textarea
-            class="textarea-problema"
-            id="descricao"
-            name="descricao"
-            placeholder="Descreva o problema"
-          ></textarea>
+          <span>DESCRIÇÃO DO PROBLEMA</span>
+          <div class="descricao-problema">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget lorem neque. Proin vehicula mollis convallis. Maecenas in libero scelerisque, congue metus vel, tincidunt orci.</p>
+          </div>
         </div>
       </div>
 
