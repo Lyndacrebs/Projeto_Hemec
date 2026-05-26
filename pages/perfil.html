@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemec | Perfil</title>
+    <link rel="stylesheet" href="/css/perfil.css">
+</head>
+<body>
+        <!-- MENU -->
+
+    <aside class="sidebar">
+      <!-- Logo -->
+      <img src="/images-DEV-EV/logo.png" class="logo" alt="logo" />
+      <hr>
+
+      <!-- Menu Principal -->
+      <nav class="menu-section">
+        <span>PRINCIPAL</span>
+
+        <a href="/pages/dashboard.html" class="nav-dashboard">
+          <img src="/images-DEV-EV/icone-1.png" alt="ICONE DASHBOARD" />
+          <span>Dashboad</span>
+        </a>
+
+        <a href="/pages/equipamentos.html" class="nav-equipamentos">
+          <img src="/images-DEV-EV/icone-2.png" alt="ICONE EQUIPAMENTOS" />
+          <span>Equipamentos</span>
+        </a>
+      </nav>
+
+      <!-- Menu Manutenção -->
+      <nav class="menu-section" class="nav-manutencao">
+        <span>MANUTENÇÃO</span>
+
+        <a href="/pages/ordens-servico.html" class="nav-ordens-servico">
+          <img src="/images-DEV-EV/icone-3.png" alt="ICONE ORDENS DE SERVIÇO" />
+          <span>Ordens de Serviço</span>
+        </a>
+
+        <a href="/pages/manutencao-preventiva.html" class="nav-manut-prev">
+          <img src="/images-DEV-EV/icone-4.png" alt="ICONE MANUTENÇÃO PREVENTIVA" />
+          <span>Manutenção Preventiva</span>
+        </a>
+      </nav>
+
+      <!-- Footer do Usuário -->
+      <div class="sidebar-footer">
+        <a href="#" class="nav-perfil">
+          <div class="avatar">
+            <img src="/images-DEV-EV/icone-5.png" alt="Avatar" />
+               <!-- ESPERANDO BACKEND -->
+            <span class="nome-usuario">Rafaela Lima</span>
+          </div>
+        </a>
+        <a href="#" class="bt-navegacao" onclick="fazerLogout(event)">
+          <img src="/images-DEV-EV/icone-6.png" alt="IMAGEM DE SAIR" />
+        </a>
+      </div>
+    </aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="conteudo-principal">
+    <!--TOPO DA PÁGINA-->
+        <div class="main-top">
+            <span>Meu Perfil</span>
+            <a href="/pages/Cadastro_equipamentos.html" class="bt-novo-equipamento">Novo Equipamento</a>
+        </div>
+
+
+        <!-- CONTEINER PERFIL -->
+        <div class="conteiner-perfil">
+            <img src="/images-DEV-EV/icone-5.png" alt="">
+
+             <!-- ESPERANDO BACKEND -->
+            <div class="info-usuario">
+                <span class="nome-usuario">Rafaela Lima</span>
+                <span class="cargo">Enfermeira</span>
+            </div>
+        </div>
+
+
+        <!-- CONTEINER INFORMAÇÕES PESSOAIS -->
+        <div class="conteiner-info">
+            <div class="topo-conteiner">
+                 <div class="nome-conteiner">
+                    <img src="/images-DEV-EV/icone-19.png" alt="" />
+                    <span>Informações Pessoais</span>
+                </div>
+
+                <button type="submit" class="bt-confirmar">Salvar Alterações</button>
+            </div>
+
+
+            <!-- Formulário -->
+            <form class="form-info-pessoais">
+                <div class="form-grid">
+            <!-- NOME COMPLETO -->
+                    <div class="input-config">
+                        <label for="nome-completo">NOME COMPLETO</label>
+                        <input type="text" id="nome-completo" name="nome" value="Rafaela Lima" />
+                    </div>
+
+            <!-- MATRÍCULA -->
+                    <div class="input-config">
+                        <label for="matricula">MATRÍCULA</label>
+                        <input type="text" id="matricula" name="matricula" value="1234" />
+                    </div>
+
+            <!-- CARGO / FUNÇÃO -->
+                    <div class="input-config">
+                        <label for="cargo">CARGO / FUNÇÃO</label>
+                        <input type="text" id="cargo" name="cargo" value="Enfermeira" />
+                    </div>
+
+            <!-- SETOR -->
+                    <div class="input-config">
+                        <label for="setor">SETOR</label>
+                        <input type="text" id="setor" name="setor" value="Engenharia clínica" />
+                    </div>
+
+            <!-- EMAIL -->
+                    <div class="input-config">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" value="rafaela@gmail.com" />
+                    </div>
+
+            <!-- TELEFONE -->
+                    <div class="input-config">
+                        <label for="telefone">TELEFONE</label>
+                        <input type="tel" id="telefone" name="telefone" value="999875342" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>
