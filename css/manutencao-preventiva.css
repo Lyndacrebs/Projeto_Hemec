@@ -265,18 +265,18 @@ img {
     display: flex;
     align-items: center;
     gap: 8px;
-}
 
-.nome-conteiner img {
+img {
     width: 16px;
     height: 16px;
 }
 
-.nome-conteiner span {
+span {
     font-family: "Montserrat-Medium", sans-serif;
     font-size: 14px;
     color: #0F1B65;
     font-weight: 500;
+}
 }
 
 /* Botão "Escolher equipamento" */
@@ -287,12 +287,12 @@ img {
     color: #000;
     text-decoration: none;
     font-size: 12px;
-}
 
-.bt-ver-todos:hover {
+&:hover {
     border-color: #2563EB;
     color: #2563EB;
     background-color: #EFF6FF;
+}
 }
 
 /* Lista de Histórico */
