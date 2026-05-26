@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hemec | Detalhes Equipamento</title>
+    <link rel="stylesheet" href="/css/detalhes-equipamento.css" />
+  </head>
+  <body>
+    <!-- MENU -->
+
+    <aside class="sidebar">
+      <!-- Logo -->
+      <img src="/images-DEV-EV/logo.png" class="logo" alt="logo" />
+      <hr />
+
+      <!-- Menu Principal -->
+      <nav class="menu-section">
+        <span>PRINCIPAL</span>
+
+        <a href="/pages/dashboard.html" class="nav-dashboard">
+          <img src="/images-DEV-EV/icone-1.png" alt="ICONE DASHBOARD" />
+          <span>Dashboad</span>
+        </a>
+
+        <a href="/pages/equipamentos.html" class="nav-equipamentos">
+          <img src="/images-DEV-EV/icone-2.png" alt="ICONE EQUIPAMENTOS" />
+          <span>Equipamentos</span>
+        </a>
+      </nav>
+
+      <!-- Menu Manutenção -->
+      <nav class="menu-section" class="nav-manutencao">
+        <span>MANUTENÇÃO</span>
+
+        <a href="/pages/ordens-servico.html" class="nav-ordens-servico">
+          <img src="/images-DEV-EV/icone-3.png" alt="ICONE ORDENS DE SERVIÇO" />
+          <span>Ordens de Serviço</span>
+        </a>
+
+        <a href="/pages/manutencao-preventiva.html" class="nav-manut-prev">
+          <img
+            src="/images-DEV-EV/icone-4.png"
+            alt="ICONE MANUTENÇÃO PREVENTIVA"
+          />
+          <span>Manutenção Preventiva</span>
+        </a>
+      </nav>
+
+      <!-- Footer do Usuário -->
+      <div class="sidebar-footer">
+        <a href="/pages/perfil.html" class="nav-perfil">
+          <div class="avatar">
+            <img src="/images-DEV-EV/icone-5.png" alt="Avatar" />
+            <!-- ESPERANDO BACKEND -->
+            <span class="nome-paciente">Rafaela Lima</span>
+          </div>
+        </a>
+        <a href="#" class="bt-navegacao" onclick="fazerLogout(event)">
+          <img src="/images-DEV-EV/icone-6.png" alt="IMAGEM DE SAIR" />
+        </a>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="conteudo-principal">
+      <!--TOPO DA PÁGINA-->
+      <div class="main-top">
+        <span>Detalhes Equipamento</span>
+        <a href="/pages/Cadastro_equipamentos.html" class="bt-novo-equipamento"
+          >Novo Equipamento</a
+        >
+      </div>
+
+
+      <!-- CABEÇALHO EQUIPAMENTO -->
+      <div class="cabecalho">
+        <div class="img-conteiner">
+          <img src="/images-DEV-EV/icone-15.png" alt="" />
+        </div>
+
+        <!-- ESPERANDO BACKEND -->
+        <div class="texto">
+          <span>Monitor Multiparamétrico</span>
+          <span>Philips</span>
+        </div>
+      </div>
+
+
+      <!-- SEÇÃO INFORMAÇÕES -->
+      <div class="secao-informacoes">
+        <span class="titulo-secao">Informações</span>
+        <hr class="linha-secao" />
+      </div>
+
+
+
+         <!-- SEÇÃO INFORMAÇÕES CARDS-->
+      <div class="grid-informacoes">
+        <!-- Card 1 -->
+        <div class="card-info">
+          <span class="label-info">VALOR PATRIMONIAL</span>
+          <span class="valor-info">R$ 48.500,00</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-info">
+          <span class="label-info">DATA DE AQUISIÇÃO</span>
+          <span class="valor-info">12/05/2023</span>
+          <!-- Corrigido para data, pois na imagem estava o valor em R$ -->
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-info">
+          <span class="label-info">LOCALIZAÇÃO</span>
+          <span class="valor-info">UTI Adulto - Leito 3</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-info">
+          <span class="label-info">NÚMERO DE SÉRIE</span>
+          <span class="valor-info">PH-MX800-2019-447</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-info">
+          <span class="label-info">CRITICIDADE</span>
+          <span class="badge-criticidade vermelho">A</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card-info">
+          <span class="label-info">ÚLTIMA MANUTENÇÃO</span>
+          <span class="valor-info vermelho">04/02/2026</span>
+        </div>
+      </div>
+
+
+
+      <div class="descricao">
+        <span>DESCRIÇÃO</span>
+        <!-- ESPERANDO BACKEND -->
+        <span class="texto-descricao" id="descricao-equipamento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget lorem neque. Proin vehicula mollis convallis.</span>
+      </div>
+
+
+    </div>
+  </body>
+</html>
