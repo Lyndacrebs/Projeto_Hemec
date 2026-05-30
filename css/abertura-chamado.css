@@ -303,49 +303,58 @@ label {
 .criticidade-options {
     display: flex;
     gap: 12px;
+    position: relative;
 }
 
+/* Esconde os radio buttons */
+.radio-criticidade {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+/* Estilo base dos botões (labels) */
 .criticidade-option {
     flex: 1;
     padding: 14px;
     border-radius: 6px;
-    border: 1px solid #E2E8F0;
+    border: 2px solid #E2E8F0;
     background-color: #ffffff;
     font-family: "Inter", sans-serif;
     font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
 }
 
-/* Estado Selecionado (A - Vermelho) */
-.option-a {
-    color: #DC2626;
-
-&:active{
+/* Quando o radio A está selecionado */
+.radio-criticidade:checked + .option-a {
     background-color: #F9E9E8;
-    border: 2px solid #DC2626;
-    transition: 5ms;
-}
+    border-color: #DC2626;
+    color: #DC2626;
 }
 
-/* Opção B (Amarelo) */
-.option-b {
-    color: #F59E0B;
-
-&:active{
+/* Quando o radio B está selecionado */
+.radio-criticidade:checked + .option-b {
     background-color: #FFEBC9;
-    border: 2px solid #F59E0B;
-    transition: 5ms;
-}
+    border-color: #F59E0B;
+    color: #F59E0B;
 }
 
-/* Opção C (Verde/Azul) */
-.option-c {
+/* Quando o radio C está selecionado */
+.radio-criticidade:checked + .option-c {
+    background-color: #D3DDFE;
+    border-color: #2155FC;
     color: #2155FC;
-
-&:active{
-    background-color: #d3ddfea1;
-    border: 2px solid #2155FC;
-    transition: 5ms;
 }
+
+/* Hover nos botões */
+.criticidade-option:hover {
+    border-color: #CBD5E1;
 }
 
 /* Text area de Descrição */
